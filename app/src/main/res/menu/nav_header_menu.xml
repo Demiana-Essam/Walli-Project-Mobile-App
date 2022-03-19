@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:title="Home"/>
+        <item
+            android:id="@+id/item2"
+            android:title="Doctors List"/>
+    </group>
+    <item
+        android:title="My Account">
+        <menu>
+            <item
+                android:id="@+id/accountSetting"
+                android:title="Account setting"/>
+            <item
+                android:id="@+id/appointments"
+                android:title="Appointments"/>
+        </menu>
+    </item>
+    <item
+        android:title="About Us">
+        <menu>
+            <item
+                android:id="@+id/credits"
+                android:title="Credits"/>
+        </menu>
+    </item>
+</menu>

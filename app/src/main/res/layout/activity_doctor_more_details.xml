@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/doctor_more_details"
+    tools:context=".doctorMoreDetails">
+
+    <Button
+        android:id="@+id/doctorInfoBookBtn"
+        android:layout_width="304dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="#596A7B"
+        android:text="Book an appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorMoreInfoWorkingDates" />
+
+    <TextView
+        android:id="@+id/doctorMoreInfoName"
+        android:layout_width="285dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/doctorMoreInfoSpecialty"
+        android:layout_width="285dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorMoreInfoRatingBar" />
+
+    <TextView
+        android:id="@+id/doctorMoreInfoFees"
+        android:layout_width="150dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:text="Fees: 970EGP"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorMoreInfoSpecialty" />
+
+    <TextView
+        android:id="@+id/doctorMoreInfoLocation"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:text="Alexandria"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorMoreInfoSpecialty" />
+
+    <TextView
+        android:id="@+id/doctorMoreInfoWorkingDates"
+        android:layout_width="285dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:text="From 12 to 11"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorMoreInfoLocation" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="195dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doctor" />
+
+    <RatingBar
+        android:id="@+id/doctorMoreInfoRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorMoreInfoName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

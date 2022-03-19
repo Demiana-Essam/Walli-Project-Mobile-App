@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerscreen2"
+    tools:context=".doctorRegisterForm">
+
+    <TextView
+        android:id="@+id/feesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="15dp"
+        android:text="Fees"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSpecialtySpinner" />
+
+    <Spinner
+        android:id="@+id/regionSpinner"
+        android:layout_width="147dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/locations"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regionLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/regionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Region"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerSpecialtySpinner" />
+
+    <Button
+        android:id="@+id/registerDoctorBtn"
+        android:layout_width="217dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="35dp"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toTimeSpinner"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/toTimeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:entries="@array/hours"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeofworkLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/toTimeLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="10dp"
+        android:text="To: "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/toTimeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/timeofworkLabel" />
+
+    <Spinner
+        android:id="@+id/registerSpecialtySpinner"
+        android:layout_width="295dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/specialty"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/specialtyTextLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/fromTimeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/hours"
+        app:layout_constraintStart_toEndOf="@+id/fromTimeLable"
+        app:layout_constraintTop_toBottomOf="@+id/timeofworkLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/specialtyTextLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="170dp"
+        android:text="Specialty"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeofworkLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="19dp"
+        android:text="Times of work"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regionSpinner" />
+
+    <TextView
+        android:id="@+id/fromTimeLable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:text="From: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeofworkLabel" />
+
+    <EditText
+        android:id="@+id/feesinput"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:hint="EGP"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feesLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

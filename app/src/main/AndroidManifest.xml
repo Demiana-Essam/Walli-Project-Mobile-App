@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.walliproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WalliProject">
+        <activity
+            android:name=".myAccountPage"
+            android:exported="true" />
+        <activity
+            android:name=".creditsPage"
+            android:exported="true" />
+        <activity
+            android:name=".doctorPage"
+            android:exported="true" />
+        <activity
+            android:name=".myAppointments"
+            android:exported="true" />
+        <activity
+            android:name=".pendingDoctors"
+            android:exported="true" />
+        <activity
+            android:name=".bookAnAppointment"
+            android:exported="true" />
+        <activity
+            android:name=".doctorMoreDetails"
+            android:exported="true" />
+        <activity
+            android:name=".AdminPage"
+            android:exported="true" />
+        <activity
+            android:name=".homePage"
+            android:exported="true"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/Theme.WalliProject.NoActionBar" />
+        <activity
+            android:name=".doctorRegisterForm"
+            android:exported="true" />
+        <activity
+            android:name=".registerForm"
+            android:exported="true" />
+        <activity
+            android:name=".LoginForm"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
